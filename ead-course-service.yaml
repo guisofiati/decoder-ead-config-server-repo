@@ -39,7 +39,7 @@ ead:
   broker:
     exchange:
       userEventExchange: ead.userevent
-      norificationCommandExchange: ead.notificationcommand
+      notificationCommandExchange: ead.notificationcommand
     queue:
       userEventQueue:
         name: ead.userevent.ms.course
