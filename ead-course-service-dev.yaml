@@ -28,9 +28,9 @@ spring:
 logging:
   level:
     root: info
-    org.springframework.web: debug
+    org.springframework.web: info
     org.hibernate: info
-    com.ead: trace
+    com.ead: info
 
 ead:
   api:
