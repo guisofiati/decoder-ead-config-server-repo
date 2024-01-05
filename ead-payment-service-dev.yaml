@@ -1,13 +1,13 @@
 server:
-  port: 8084
+  port: 8086
   servlet:
-    context-path: '/ead-notification/'
+    context-path: '/ead-payment/'
 
 spring:
   application:
-    name: ead-notification-service
+    name: ead-payment-service
   datasource:
-    url: jdbc:postgresql://localhost:5435/ead-notification
+    url: jdbc:postgresql://localhost:5436/ead-payment
     username: postgres
     password: 123456
   jpa:
@@ -31,16 +31,6 @@ logging:
     root: INFO
     org.springframework.web: DEBUG
     org.hibernate: INFO
-
-ead:
-  broker:
-    exchange:
-      notificationCommandExchange: ead.notificationcommand
-    queue:
-      notificationCommandQueue:
-        name: ead.notificationcommand.ms.notification
-    key:
-      notificationCommandKey: ms.notification
 
 management:
   endpoints:
